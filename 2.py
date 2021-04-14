@@ -11,7 +11,7 @@ def get_iciba_everyday():
     bee = eed.json()               #返回的数据
     english = eed.json()['content']
     zh_CN = eed.json()['note']
-    str = '\n【每日一句】\n' + english + '\n' + zh_CN
+    str = '【每日一句】\n' + english + '\n' + zh_CN
     return str
 print(get_iciba_everyday())
 
